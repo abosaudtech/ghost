@@ -51,8 +51,8 @@ function createConfig() {
       "host": "smtp.gmail.com",
       "port": 587,
       "auth": {
-        "user": "your@google.email",
-        "pass": "this password",
+        "user": "abosaudtech@gmail.com",
+        "pass": "mrgrsozlcfsbvqeg",
         },
       },
     },
