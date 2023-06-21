@@ -47,12 +47,12 @@ function createConfig() {
       transports: ["stdout"],
     },
     mail: {
-      "service": "Google",
-      "host": "smtp.gmail.com",
-      "port": 587,
-      "auth": {
-        "user": "abosaudtech@gmail.com",
-        "pass": "mrgrsozlcfsbvqeg",
+      transport: "SMTP",
+      options: {
+        service: "Mailgun",
+        auth: {
+          user: process.env.MAILGUN_SMTP_LOGIN,
+          pass: process.env.MAILGUN_SMTP_PASSWORD,
         },
       },
     },
